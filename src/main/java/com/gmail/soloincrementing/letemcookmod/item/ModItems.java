@@ -24,6 +24,26 @@ public class ModItems {
                     new Item.Properties().setId(
                             ResourceKey.create(Registries.ITEM, ResourceLocation.parse("letemcookmod:banana")))));
 
+    public static final RegistryObject<Item> PEELED_BANANA =
+            ITEMS.register("peeled_banana", () -> new Item(
+                    new Item.Properties().setId(
+                            ResourceKey.create(Registries.ITEM, ResourceLocation.parse("letemcookmod:peeled_banana")))));
+
+    public static final RegistryObject<Item> CHOPPED_BANANA =
+            ITEMS.register("chopped_banana", () -> new Item(
+                    new Item.Properties().setId(
+                            ResourceKey.create(Registries.ITEM, ResourceLocation.parse("letemcookmod:chopped_banana")))));
+
+    public static final RegistryObject<Item> DEEP_PLATE =
+            ITEMS.register("deep_plate", () -> new Item(
+                    new Item.Properties().setId(
+                            ResourceKey.create(Registries.ITEM, ResourceLocation.parse("letemcookmod:deep_plate")))));
+
+    public static final RegistryObject<Item> CHOPPED_BANANA_DEEP_PLATE =
+            ITEMS.register("chopped_banana_deep_plate", () -> new Item(
+                    new Item.Properties().setId(
+                            ResourceKey.create(Registries.ITEM, ResourceLocation.parse("letemcookmod:chopped_banana_deep_plate")))));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

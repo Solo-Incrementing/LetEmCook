@@ -1,5 +1,12 @@
 {
   "item.letemcookmod.pear": "Pear",
   "item.letemcookmod.banana": "Banana",
-  "item.letemcookmod.kitchen_counter_block": "Kitchen Counter"
+  "item.letemcookmod.peeled_banana": "Peeled Banana",
+  "item.letemcookmod.chopped_banana": "Chopped Banana",
+  "item.letemcookmod.deep_plate": "Deep Plate",
+  "item.letemcookmod.chopped_banana_deep_plate": "Deep Plate of Chopped Bananas",
+  "item.letemcookmod.kitchen_counter_block": "Kitchen Counter",
+
+  "creativetab.letemcookmod.letemcook_food": "LetEmCook Food",
+  "creativetab.letemcookmod.letemcook_blocks": "LetEmCook Blocks"
 }

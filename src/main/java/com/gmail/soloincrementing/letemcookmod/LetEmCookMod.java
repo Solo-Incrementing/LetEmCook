@@ -1,6 +1,7 @@
 package com.gmail.soloincrementing.letemcookmod;
 
 import com.gmail.soloincrementing.letemcookmod.block.ModBlocks;
+import com.gmail.soloincrementing.letemcookmod.item.ModCreativeModeTabs;
 import com.gmail.soloincrementing.letemcookmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,8 +35,10 @@ public class LetEmCookMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -49,14 +52,14 @@ public class LetEmCookMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
-            event.accept(ModItems.PEAR);
-            event.accept(ModItems.BANANA);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.KITCHEN_COUNTER_BLOCK);
-        }
+//        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+//            event.accept(ModItems.PEAR);
+//            event.accept(ModItems.BANANA);
+//        }
+//
+//        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+//            event.accept(ModBlocks.KITCHEN_COUNTER_BLOCK);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
